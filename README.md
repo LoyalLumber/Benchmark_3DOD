@@ -5,9 +5,10 @@
 1. [Introduction](#Introduction)
 2. [Environment](#Environment)
 3. [Datasets](#Datasets)
-4. [Frameworks](#Frameworks)
-5. [Citation](#Citation)
-5. [Acknowledgement](#Acknowledgement)
+4. [Run](#Run)
+5. [Frameworks](#Frameworks)
+6. [Citation](#Citation)
+7. [Acknowledgement](#Acknowledgement)
 <br><br>
 
 ## Introduction
@@ -18,7 +19,13 @@ We have tested the tool on the four Jetson series including AGX, NX, TX2, and Na
 
 The work analyzes frame per second (FPS) and resource usages (CPU, GPU, RAM, Power consumption) of each detector on the Jetsons. 
 
-<img src="https://user-images.githubusercontent.com/12907710/137271636-56ba1cd2-b110-4812-8221-b4c120320aa9.png"/>
+### Clone and install requirements
+    1. git clone "this repository" 
+    2. sudo pip install -r requirements.txt
+
+### Download pre-trained weights 
+    1. cd weights/
+    2. bash download_weights.sh
 
 ## Environment
 
@@ -33,10 +40,21 @@ The work analyzes frame per second (FPS) and resource usages (CPU, GPU, RAM, Pow
 We run the benchmak using two datasets: KITTI and nuScenes. 
 You can download the datasets from below links. 
 
+Make sure that place the datasets in 'datasets' folder.
+- datasets/KITTI/*
+- datasets/nuScenes/*
+
 | Dataset | Link |
 | :---:        |     :---:  |     
 | **KITTI**   | [link](http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=3d) |
 | **nuScenes**   | [link](https://www.nuscenes.org/nuscenes?externalData=all&mapData=all&modalities=Any) |
+
+## Run
+
+Run 'resource_anlyzer.py' in 'src/resource_analyzer' folder.
+You need to specify the "--model" and "--output". 
+
+    $  python resource_analyzer.py --model Complex-YOLOv4 --output/C-YOLOv4  
 
 
 ## Fremeworks
