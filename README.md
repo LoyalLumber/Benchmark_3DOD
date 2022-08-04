@@ -65,7 +65,7 @@ You need to specify the "--model" and "--output".
     $  python resource_analyzer.py --model Complex-YOLOv4 --output/C-YOLOv4  
 
 
-## Fremeworks
+## Frameworks
 
 Thanks for the contributors on 3D detectors. 
 Please move to each branch for detailed instructions about source codes. 
