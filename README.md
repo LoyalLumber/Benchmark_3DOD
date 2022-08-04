@@ -3,7 +3,7 @@
 <div align="center">
 
 <p align="center">
-<img width="500" src="https://github.com/LoyalLumber/Benchmark_3DOD/blob/a963d08bb802177554c17b67d8bea5a27b0d5898/samples/sample.pngg"><br>
+<img width="500" src="https://github.com/LoyalLumber/Benchmark_3DOD/blob/a963d08bb802177554c17b67d8bea5a27b0d5898/samples/sample.png"><br>
 </p>
 
 </div>
