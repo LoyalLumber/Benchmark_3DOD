@@ -41,6 +41,7 @@ The work analyzes frame per second (FPS) and resource usages (CPU, GPU, RAM, Pow
 - CUDA Toolkit 10.2
 - Python 3.6.9
 - Please check "requirements.txt" for the detailed libraries. 
+- The best configuration of each framework can be found in cfg folder. 
 
 
 ## Datasets
